@@ -71,7 +71,7 @@ let
   # silent) AND when it did but `identities`/`groups` moved, was renamed, or
   # was rejected by its own type (a defect, silently indistinguishable from
   # the first case with a bare `or`) -- see nixhost's own `lib/facts.nix`
-  # header (github:julian-corbet/nixhost-corbet-ch) for the full defect class
+  # header (github:corbet-nix/nixhost-corbet-ch) for the full defect class
   # this family lost real weeks to elsewhere. `probeFact` tells the two
   # apart: `nsIdentities`/`nsGroups` still resolve to `{ }` either way (this
   # module keeps evaluating, `uid`/`gid` simply unresolved, exactly as

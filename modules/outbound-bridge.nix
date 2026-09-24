@@ -144,7 +144,7 @@ let
   # ---------------------------------------------------------------------
   # `bindInterface`'s resolution -- read-only, defensive lookup into
   # `config.nixhost.resources.net`, never a flake input on
-  # github:julian-corbet/nixhost-corbet-ch (see that option's own
+  # github:corbet-nix/nixhost-corbet-ch (see that option's own
   # description). Guarded at every hop rather than a single trailing `or`:
   # `netTable.${cfg.bindInterface} or null` and
   # `ifaceEntry.addresses.${cfg.bindInterfaceRole} or null` each stand alone
@@ -261,7 +261,7 @@ in
         instead of hand-typing the literal address a second time here -- the
         same "box's own real, stable, non-loopback address" fact `bindHost`'s
         own description asks for, addressed through this host's own `nixhost`
-        self-description (see github:julian-corbet/nixhost-corbet-ch) rather
+        self-description (see github:corbet-nix/nixhost-corbet-ch) rather
         than copy-pasted.
 
         `null` (the default) is a complete no-op: `bindHost` keeps its own
