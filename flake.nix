@@ -4,8 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    # For exactly one thing: `lib.probeFact`/`lib.collectProbes` (github:julian-corbet/
-    # nixhost-corbet-ch, `lib/facts.nix`) -- the shared, plain-function fix for the
+    # For exactly one thing: `lib.probeFact`/`lib.collectProbes` (github:corbet-nix/nixhost-corbet-ch, `lib/facts.nix`) -- the shared, plain-function fix for the
     # cross-namespace defensive-read defect class (a bare `config.nixfoo.bar or fallback`
     # cannot tell "nixfoo not composed here" from "nixfoo composed but `bar`
     # moved/renamed/rejected" -- see nixhost's own `lib/facts.nix` header). `stalwart.nix`'s own
